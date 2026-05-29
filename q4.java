@@ -4,7 +4,6 @@ public class ATMInformationSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Taking inputs
         System.out.print("Enter Account Holder Name: ");
         String accountHolder = scanner.nextLine();
 
@@ -14,11 +13,9 @@ public class ATMInformationSystem {
         System.out.print("Enter Withdrawal Amount: ");
         double withdrawal = scanner.nextDouble();
 
-        // Outputting the result
         System.out.println("\n--- Transaction Details ---");
         System.out.println("Account Holder: " + accountHolder);
-        
-        // Bonus: Using comparison operator to check funds
+
         boolean canWithdraw = balance > withdrawal;
         System.out.println("Sufficient funds for withdrawal (Balance > Withdrawal)? " + canWithdraw);
 
